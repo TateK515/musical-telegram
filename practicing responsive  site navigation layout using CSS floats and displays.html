@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Simple site navigation using CSS floats:</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+<style>
+* {
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+@media (max-width: 759px) {
+header {
+  text-align: center;
+}
+
+.main-nav li {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: .625rem;
+}
+}
+
+@media (min-width: 760px) and (max-width: 1075px) {
+
+header {
+  text-align: center;
+}
+
+
+.main-nav {
+  display: inline-block;
+}
+
+.main-nav li {
+  float: left;
+  margin-right: 3rem;
+  border: 2px solid black;
+  border-radius: .625rem;
+  padding: 10px;
+}
+}
+
+@media (min-width: 1076px) {
+.site-name {
+  float:left;
+}
+
+.main-nav {
+  float: right;
+}
+
+.main-nav li {
+  float: right;
+  margin-right: 3rem;
+  border: 2px solid black;
+  border-radius: .625rem;
+  padding: 10px;
+}
+}
+
+</style>
+</head>
+<body>
+<header>
+<h1 class="site-name">The Head honcho</h1>
+<nav>
+<ul class="main-nav">
+<li>About:</li>
+<li>Articles:</li>
+<li>Contact:</li>
+<li>Gallery:</Li>
+<li>Resources:</li>
+</ul>
+</nav>
+</header>
+<main>
+
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
